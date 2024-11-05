@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="CDN Files\jquery-3.7.1.js"></script>
+    <script src="CDN Files\Bootstrap 5\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CDN Files\Bootstrap 5\css\bootstrap.min.css">
+    <!-- <style>
+        #flip{
+            
+            background-color: rgb(87, 157, 219);
+            padding:5px;
+            color: black;
+        }
+        #pannel{
+            display: none;
+            background-color: rgb(130, 130, 178);
+            padding:50px;
+            color: black;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <p style="size: 100px;">hello</p>
+    <h1>my name</h1>
+    <label>Name</label> -->
+    <!-- <input type="name "id="name">
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</toggle> -->
+    <!-- <br><button id="fadein">fade in</button>
+    <button id="fadeout">fade out</button>
+    <button id="fadetog">fade toggle</button>
+    <button id="fadeto">fade to</button>
+    <div id="col1" style="width:80px;height:80px;display:none;background-color: rgb(59, 186, 59)"></div>
+    <div id="col2" style="width:80px;height:80px;display:none;background-color: rgb(62, 79, 190)"></div>
+    <div id="col3" style="width:80px;height:80px;display:none;background-color: rgb(203, 58, 58)"></div> -->
+
+    <!-- <div id="flip"><center>click here</center> </div>
+    <div id="pannel"><center>pull up</center></div> -->
+    <button id="press">press</button>
+    <div id="box" style="width:80px;height:80px;background-color: rgb(59, 186, 59);position:relative">this is box</div>
+</body>
+ <!-- <script>
+    $(document).ready(function(){
+       $("p").click(function(){
+        alert("hello") 
+    });
+});  
+</script>-->
+<!-- <script>
+    $(document).ready(function(){
+        $("h1").mouseenter(function(){
+            alert("you have used mouse enter")
+        });
+    });
+</script> -->
+<!-- <script>
+    $(document).ready(function(){
+        $("h1").mouseleave(function(){
+            alert("you have left the mouse")
+        });
+    });
+</script> -->
+<script>
+    // $(document).ready(function(){
+    //     $("h1").mousedown(function(){
+    //         alert("hello this is mouse down")
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //     $("h1").mouseup(function(){
+    //        alert("hello this is mouse down")
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //     $("input").focus(function(){
+    //         $(this).css("background-color" ,"green")
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //     $("input").blur(function(){
+    //         $(this).css("background-color","yellow")
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //     $("#hide").click(function(){
+    //         $("p").hide()
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $("#show").click(function(){
+    //         $("p").show()
+    //     });
+    // });
+
+    //  $(document).ready(function(){
+    //     $("#toggle").click(function(){
+    //         $("h1").toggle()
+    //     });
+    //  });
+
+    // $(document).ready(function(){
+    //     $("#fadein").click(function(){
+    //         $("#col1").fadeIn(1000)
+    //         $("#col2").fadeIn(2000)
+    //         $("#col3").fadeIn(3000)
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $("#fadeout").click(function(){
+    //         $("#col1").fadeOut(3000)
+    //         $("#col2").fadeOut(2000)
+    //         $("#col3").fadeOut(1000)
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $("#fadetog").click(function(){
+    //         $("#col1").fadeToggle(3000)
+    //         $("#col2").fadeToggle(2000)
+    //         $("#col3").fadeToggle(1000)
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //      $("#fadeto").click(function(){
+    //        $("#col1").fadeTo("slow",0.14)
+    //        $("#col2").fadeTo("fast",0.23)
+    //        $("#col3").fadeTo("slow",0.7)
+    //    });
+    //  });
+
+    // $(document).ready(function(){
+    //     $("#flip").click(function(){
+    //         $("#pannel").slideUp("slow")
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $("#flip").click(function(){
+    //         $("#pannel").slideDown("slow")
+    //     });
+    // });
+    // $(document).ready(function(){
+    //     $("#flip").click(function(){
+    //         $("#pannel").slideToggle("slow")
+    //     });
+    // });
+
+        $(document).ready(function(){
+         $("#press").click(function(){
+             $("#box").animate({
+                height:"100px",
+                left:"250px",
+                top:"200px",
+                bottom:"100px"
+             })
+         });
+     });
+
+</script>
+</html>

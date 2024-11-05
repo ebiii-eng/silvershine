@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classy Jewelry - Necklaces</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #d9b77a;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #d9b77a;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .title {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+        font-family: "Playfair Display", serif;
+        color: #4d2e1e;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .necklace-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .necklace-item {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        color: #333;
+      }
+      .necklace-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(217, 183, 122, 0.5);
+      }
+      .necklace-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 3px solid #b85c5c;
+      }
+      .necklace-details {
+        padding: 15px;
+        text-align: center;
+      }
+      .necklace-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Playfair Display", serif;
+        color: #4d2e1e;
+        margin-bottom: 5px;
+      }
+      .necklace-price {
+        color: #b85c5c;
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      .footer {
+        padding: 20px 0;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .footer a {
+        color: #b85c5c;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .footer a:hover {
+        color: #4d2e1e;
+      }
+      .back-home-btn {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        padding: 10px 20px;
+        background-color: #f0c14b;
+        color: #111;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .back-home-btn:hover {
+        background-color: #ffd700;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Shiver & Shine Necklaces</div>
+
+      <div class="necklace-grid">
+        <a href="product1.html" class="necklace-item">
+          <img
+            src="diamond0.webp"
+            alt="Diamond Necklace"
+            class="necklace-image"
+          />
+          <div class="necklace-details">
+            <div class="necklace-name">Diamond Necklace</div>
+            <div class="necklace-price">$250,000</div>
+          </div>
+        </a>
+
+        <a href="product2.html" class="necklace-item">
+          <img src="gold.webp" alt="Gold Necklace" class="necklace-image" />
+          <div class="necklace-details">
+            <div class="necklace-name">Gold Necklace</div>
+            <div class="necklace-price">$2,500</div>
+          </div>
+        </a>
+
+        <a href="product3.html" class="necklace-item">
+          <img src="pearl.jpg" alt="Pearl Necklace" class="necklace-image" />
+          <div class="necklace-details">
+            <div class="necklace-name">Pearl Necklace</div>
+            <div class="necklace-price">$1,800</div>
+          </div>
+        </a>
+
+        <a href="product4.html" class="necklace-item">
+          <img src="silver.jpg" alt="Silver Necklace" class="necklace-image" />
+          <div class="necklace-details">
+            <div class="necklace-name">Silver Necklace</div>
+            <div class="necklace-price">$1,200</div>
+          </div>
+        </a>
+
+        <a href="product5.html" class="necklace-item">
+          <img
+            src="product5.jpg"
+            alt="Sapphire Necklace"
+            class="necklace-image"
+          />
+          <div class="necklace-details">
+            <div class="necklace-name">Sapphire Necklace</div>
+            <div class="necklace-price">$3,000</div>
+          </div>
+        </a>
+
+        <a href="product6.html" class="necklace-item">
+          <img src="sapp.webp" alt="Emerald Necklace" class="necklace-image" />
+          <div class="necklace-details">
+            <div class="necklace-name">Emerald Necklace</div>
+            <div class="necklace-price">$4,000</div>
+          </div>
+        </a>
+      </div>
+      <div class="footer">
+        &copy; 2024 Shiver & Shine. All Rights Reserved. |
+        <a href="#privacy">Privacy Policy</a> |
+        <a href="#terms">Terms of Service</a>
+      </div>
+    </div>
+  </body>
+</html>

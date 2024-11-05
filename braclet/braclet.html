@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jewelry Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #d9b77a;
+      }
+      .navbar {
+        background-color: #ffffff;
+        padding: 10px 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+      }
+      .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+      .navbar-nav li {
+        list-style: none;
+      }
+      .navbar-nav a {
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      .navbar-nav a:hover {
+        color: red;
+      }
+      .bracelet_banner {
+        height: 550px;
+        width: 100%;
+        max-width: 1320px;
+      }
+      .text-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      p {
+        font-family: "Playfair Display", serif;
+        font-size: 25.3px;
+        color: black;
+        text-align: center;
+      }
+      .buy_now {
+        height: 45px;
+        width: 200px;
+        background-color: #d9b77a;
+      }
+      .bracelet-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .bracelet {
+        height: 1000px;
+        width: 650px;
+      }
+      .bracelet-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .bracelet-right img {
+        width: auto;
+        height: 490px;
+      }
+      .images {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .images img {
+        width: 400px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li><a href="#">RINGS</a></li>
+          <li><a href="braclet\braclet.html">BRACELET</a></li>
+          <li>
+            <a class="navbar-brand" href="#"
+              ><img src="logo.PNG" alt="Logo"
+            /></a>
+          </li>
+          <li><a href="#">NECKLASE</a></li>
+          <li><a href="#">BRAND STORY</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="sign_up\sign_up.html">SIGN UP</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <center>
+        <img
+          class="bracelet_banner"
+          src="bracelet_banner.webp"
+          alt="Bracelet Banner"
+        />
+      </center>
+    </div>
+    <br /><br />
+    <div class="text-container">
+      <p>
+        Our gold bracelets for
+        <a href="men2\men2.html">men</a> and
+        <a href="men/men.html">women</a> are sculpted with utmost precision. The
+        <a href="">collection</a> is highly exclusive and versatile, completely
+        embodying our design aesthetic. Our resplendent bracelets can also be
+        worn alone to bring out your shine.
+      </p>
+      <br /><br />
+      <center>
+        <button class="buy_now"><a href="men3.html">Shop Now</a></button>
+      </center>
+      <br /><br /><br />
+      <div class="bracelet-container">
+        <img class="bracelet" src="bracelet.png" alt="Main Bracelet" />
+        <div class="bracelet-right">
+          <img class="bracelet1" src="bracelet1.png" alt="Bracelet 1" />
+          <img class="bracelet2" src="bracelet2.png" alt="Bracelet 2" />
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="images">
+        <img src="show1.webp" alt="" />
+        <img src="show2.webp" alt="" />
+        <img src="show3.webp" alt="" />
+        <img src="show4.webp" alt="" />
+      </div>
+    </div>
+    <br /><br />
+    <hr style="height: 3px; border-width: 0; background-color: black" />
+    <center>
+      <h1 class="handwritten1">Made by</h1>
+      <h1 class="handwritten1">Kalash- C005</h1>
+      <h1 class="handwritten1">Ebrahim- C009</h1>
+      <h1 class="handwritten1">Shravni- C007</h1>
+    </center>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".bracelet, .bracelet1, .bracelet2,.buy_now  ").hover(
+        function () {
+          $(this).css({
+            transform: "scale(1.05)",
+            transition: "transform 0.3s ease",
+          });
+        },
+        function () {
+          $(this).css({
+            transform: "scale(1)",
+            transition: "transform 0.3s ease",
+          });
+        }
+      );
+    });
+  </script>
+</html>

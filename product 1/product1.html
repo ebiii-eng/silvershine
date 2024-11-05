@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jewelry Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e6dfd6;
+        color: #4a4a4a;
+        font-family: "Playfair Display", serif;
+      }
+      .navbar {
+        background-color: #ffffff;
+        padding: 10px 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+      .navbar-nav li {
+        list-style: none;
+      }
+      .navbar-nav a {
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+      .navbar-nav a:hover {
+        color: #d9b77a;
+      }
+      .handwritten {
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+        font-size: 80px;
+        margin: 20px 0;
+        color: #4a4a4a;
+      }
+      .size-title {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        color: #4a4a4a;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .size-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 15px;
+      }
+      .size-button {
+        background-color: #ffffff;
+        border: 2px solid #d9b77a;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .size-button:hover {
+        background-color: #4a4a4a;
+        color: #ffffff;
+      }
+      .container {
+        display: flex;
+        align-items: flex-start;
+        margin: 40px;
+        gap: 250px;
+      }
+      .image {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .row1,
+      .row2 {
+        display: flex;
+        gap: 15px;
+      }
+      .image img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+      .image img:hover {
+        transform: scale(1.05);
+      }
+      .right {
+        flex: 1;
+        max-width: 500px;
+      }
+      .table {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .table td,
+      .table th {
+        padding: 15px;
+        font-size: 18px;
+        color: #4a4a4a;
+        border-top: 1px solid #d9b77a;
+      }
+      .table th {
+        color: #d9b77a;
+        font-size: 20px;
+      }
+      .buy-now-button {
+        background-color: #d9b77a;
+        color: black;
+        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 20px;
+        display: block;
+        margin: 30px auto;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+      }
+      .buy-now-button:hover {
+        background-color: black;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li><a href="#">OUR BRANDS</a></li>
+          <li><a href="#">MUHURAT</a></li>
+          <li><a href="#">SHOP ONLINE</a></li>
+          <li><a href="#">JEWELLERY</a></li>
+          <li>
+            <a class="navbar-brand" href="#">
+              <img src="logo.PNG" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">GIFT CARD</a></li>
+          <li><a href="#">AMBASSADORS</a></li>
+          <li><a href="#">INVESTORS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="image">
+        <img src="show1.webp" alt="" />
+        <div class="row1">
+          <img src="1.webp" alt="" />
+          <img src="2.webp" alt="" />
+          <img src="3.webp" alt="" />
+        </div>
+        <div class="row2">
+          <img src="4.webp" alt="" />
+          <img src="5.webp" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <h1 class="handwritten">Timeless Treasures</h1>
+        <br />
+        <h2 class="size-title">Size</h2>
+        <div class="size-options">
+          <button class="size-button">L</button>
+          <button class="size-button">LL</button>
+          <button class="size-button">XS</button>
+          <button class="size-button">X</button>
+          <button class="size-button">M</button>
+        </div>
+        <br /><br />
+        <h2 class="handwritten">Total Cost</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Price Break-up</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Metal</td>
+              <td>₹230,807</td>
+            </tr>
+            <tr>
+              <td>Making Charges</td>
+              <td>₹55,728</td>
+            </tr>
+            <tr>
+              <td>GST(3%)</td>
+              <td>₹8,596</td>
+            </tr>
+            <tr>
+              <td><strong>Grand Total</strong></td>
+              <td><strong>₹295,131</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="buy-now-button">Buy Now</a>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".buy-now-button").hover(
+          function () {
+            $(this).css("background-color", "black").css("color", "white");
+          },
+          function () {
+            $(this).css("background-color", "#d9b77a").css("color", "black");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

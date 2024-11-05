@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jewelry Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* General Page Style */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f3ec;
+        color: #4a4a4a;
+        font-family: "Playfair Display", serif;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: #ffffff;
+        padding: 15px 50px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-nav {
+        display: flex;
+        gap: 60px;
+        font-size: 18px;
+      }
+
+      .navbar-brand img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .navbar-nav a {
+        color: #333;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .navbar-nav a:hover {
+        color: #b88d60;
+        transform: scale(1.1);
+      }
+
+      /* Header Text Styling */
+      .handwritten {
+        font-family: "Great Vibes", cursive;
+        font-size: 80px;
+        margin: 40px 0 10px;
+        color: #8b4513;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Subheading Styling */
+      p {
+        font-size: 22px;
+        line-height: 1.6;
+        max-width: 80%;
+        color: #555;
+        margin: 0 auto;
+      }
+
+      /* Image Grid and Overlay */
+      .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .row img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .row img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .price-overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 20px;
+        top: 15px;
+        left: 15px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li><a href="Shravani\rings.html">RINGS</a></li>
+          <li><a href="braclet\braclet.html">BRACELET</a></li>
+          <li><a href="JEWELRY\necklaces.html">NECKLASE</a></li>
+          <li>
+            <a class="navbar-brand" href="#"
+              ><img src="logo.PNG" alt="Logo"
+            /></a>
+          </li>
+          <li><a href="Shravani\brandstories.html">BRAND STORY</a></li>
+          <li><a href="JEWELRY\aboutus.html">ABOUT US</a></li>
+          <li><a href="sign_up\sign_up.html">SIGN UP</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <center>
+      <h1 class="handwritten">Collection for Men</h1>
+      <p>
+        Men's gold bracelets symbolize friendship, beliefs, and strength of
+        character. Discover our latest collection.
+      </p>
+    </center>
+    <br /><br />
+
+    <div class="images">
+      <div class="row">
+        <div style="position: relative">
+          <a href="product 1\product1.html">
+            <img src="show1.webp" alt="Bracelet 1" />
+            <div class="price-overlay">$500</div>
+          </a>
+        </div>
+        <div style="position: relative">
+          <img src="show2.webp" alt="Bracelet 2" />
+          <div class="price-overlay">$600</div>
+        </div>
+        <div style="position: relative">
+          <img src="show3.webp" alt="Bracelet 3" />
+          <div class="price-overlay">$550</div>
+        </div>
+      </div>
+      <div class="row">
+        <div style="position: relative">
+          <img src="show4.webp" alt="Bracelet 4" />
+          <div class="price-overlay">$650</div>
+        </div>
+        <div style="position: relative">
+          <img src="bracelet1.png" alt="Bracelet 5" />
+          <div class="price-overlay">$700</div>
+        </div>
+        <div style="position: relative">
+          <img src="bracelet2.png" alt="Bracelet 6" />
+          <div class="price-overlay">$750</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".row div").hover(
+          function () {
+            $(this).find(".price-overlay").fadeIn(200);
+          },
+          function () {
+            $(this).find(".price-overlay").fadeOut(200);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
